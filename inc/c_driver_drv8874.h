@@ -1,5 +1,5 @@
-#ifndef EMPTY_HEADER_H
-#define EMPTY_HEADER_H
+#ifndef C_DRIVER_DRV8874_H
+#define C_DRIVER_DRV8874_H
 /***********************/
 /* PUBLIC DEFINITIONS */
 /***********************/
