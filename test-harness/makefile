@@ -43,6 +43,7 @@ SRC_DIRS += ../user_code
 TEST_SRC_FILES += 
 TEST_SRC_DIRS += tests
 TEST_SRC_DIRS += spies
+TEST_SRC_DIRS += fakes
 #	tests/example-fff \
 #	tests/fff \
 
