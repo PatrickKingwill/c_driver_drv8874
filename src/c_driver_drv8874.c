@@ -72,16 +72,3 @@ float motor_get_current(motor_t * motor)
 {
     return adc_read();
 }
-
-//void motor_forward(motor_t * motor)
-
-// Interface 
-/**
- * motor_init(time_function, pin_write_function, pwm_write_function, sleep_pin)
- * motor_sleep()
- * motor_get_current()
- * motor_get_fault()
- * motor_enable()
- * motor_go(int32 speed)
- * 
-*/
