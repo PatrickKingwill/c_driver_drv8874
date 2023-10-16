@@ -13,8 +13,8 @@ typedef struct
 ```
 
 You must implement 3 functions in user_motor.c.
-- void gpio_write(pin_t pin, gpio_state_t state)
-This takes a pin_t structure and a gpio_state_t value (GPIO_STATE_HIGH, GPIO_STATE_LOW) and should call the appropriate function to set the given pin to the given state.
+- void gpio_write(pin_t pin, gpio_state_t state)  
+This takes a pin_t structure and a gpio_state_t value (GPIO_STATE_HIGH, GPIO_STATE_LOW) and should call the appropriate function to set the given pin to the given state.  
 Example for STM32 + HAL:
 ```
 void gpio_write(pin_t pin, gpio_state_t state)
@@ -24,8 +24,8 @@ void gpio_write(pin_t pin, gpio_state_t state)
 }
 ```
 
-- gpio_state_t gpio_read(pin_t pin)
-This takes a pin_t structure, reads it using whatever platform GPIO read function, and then outputs a GPIO_STATE_HIGH or GPIO_STATE_LOW depending on the read value.
+- gpio_state_t gpio_read(pin_t pin)  
+This takes a pin_t structure, reads it using whatever platform GPIO read function, and then outputs a GPIO_STATE_HIGH or GPIO_STATE_LOW depending on the read value.  
 Example for STM32 + HAL:
 ```
 gpio_state_t gpio_read(pin_t pin)
@@ -36,8 +36,8 @@ gpio_state_t gpio_read(pin_t pin)
 }
 ```
 
-- float adc_read()
-This reads your configured ADC and converts the value to current, then returns this value
+- float adc_read()  
+This reads your configured ADC and converts the value to current, then returns this value.  
 Example for STM32 + HAL:
 ```
 float adc_read()
@@ -53,7 +53,7 @@ float adc_read()
 ```
 
 ### Usage
-Once set up, initialise the motor by creating a motor_t struct describing the pinout using previously defined pin_t structs. Pass this struct to the motor_init function and the module is ready to use.
+Once set up, initialise the motor by creating a motor_t struct describing the pinout using previously defined pin_t structs. Pass this struct to the motor_init function and the module is ready to use.  
 Example for STM32 + HAL:
 ```
 motor_t motor = {
