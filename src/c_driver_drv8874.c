@@ -67,8 +67,8 @@ int motor_get_fault(motor_t * motor)
         return 0;
     return 1;
 }
-
-float motor_get_current(motor_t * motor)
-{
-    return adc_read();
-}
+//
+//float motor_get_current(motor_t * motor)
+//{
+//    return adc_read();
+//}

@@ -61,7 +61,7 @@ gpio_state_t gpio_read(pin_t pin);
  * 
  * @return Value from from ADC.
 */
-float adc_read();
+//float adc_read();
 
 /**
  * @brief Intialises the motor. Ensures GPIOs are set so that motor is asleep, disabled and in "forwards" mode.
